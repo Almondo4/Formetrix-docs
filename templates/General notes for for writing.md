@@ -1,4 +1,10 @@
 
+
+```
+Docuemntaion writing style
+
+Think of it like intellectual UX writing: clean, structured, scannable, with subtle emphasis that guides the mind.
+```
 Below is a **prompt-engineering template** you can reuse to consistently get documentation at **this exact level** (structure, tone, depth, discipline).
 
   

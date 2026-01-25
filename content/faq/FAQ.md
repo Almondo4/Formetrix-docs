@@ -1,7 +1,18 @@
-
+---
+title: General FAQ
+description: General Frequently Asked Questions About Formetrix
+tags:
+  - guide
+  - faq
+publish: true
+date: 2026-01-20
+lastmod: 2026-01-21
+aliases:
+  - Frequently Asked Questions
+---
 
 ## **Frequently Asked Questions (FAQ)**
-
+<br/>
 
 <details>
   <summary>

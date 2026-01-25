@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Formetrix Docs",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -17,42 +17,47 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian"], //"assets"
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
-      },
-      colors: {
-        lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
-        darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
-        },
-      },
-    },
+    header: {
+      name:"Sora",
+      weights: [300,400,]
+    }, // test : sora , Marcellus, Poiret One, Comfortaa
+    body: "Work Sans",   // Source Sans Pro
+    code: "IBM Plex Mono",     // A clean alternative to JetBrains Mono
   },
+      colors: {
+  lightMode: {
+    light: "#f6f6f4",
+    lightgray: "#ececea",
+    gray: "#d1d1ce",
+    darkgray: "#6b7280",
+    dark: "#1f2937",
+    secondary: "#475569",
+    tertiary: "#7794c1",
+    // Fixed: Compact RGBA or Hex8 is required to prevent conversion errors
+    highlight: "rgba(36,43,53,0.12)",
+    textHighlight: "rgba(245,158,11,0.28)",
+  },
+  darkMode: {
+  light: "#161618",
+  lightgray: "#393639",
+  gray: "#646464",
+  darkgray: "#d4d4d4",
+  dark: "#ebebec",
+  secondary: "#d4c9a5", // Updated
+  tertiary: "#f0d989", // Updated
+  highlight: "rgba(143,159,169,0.15)",
+  textHighlight: "#e0a64e", // Updated
+},
+},
+    }, // Correctly closing the theme object
+  }, // Correctly closing the configuration object
+
   plugins: {
     transformers: [
       Plugin.FrontMatter(),

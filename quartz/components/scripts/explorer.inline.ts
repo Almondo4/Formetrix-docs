@@ -20,6 +20,38 @@ type FolderState = {
 }
 
 let currentExplorerState: Array<FolderState>
+
+function isMobileExplorerVisible(explorer: Element): boolean {
+  const mobileExplorer = explorer.querySelector(".mobile-explorer") as HTMLElement | null
+  // checkVisibility() is not supported everywhere; fall back to computed style
+  const visible =
+    mobileExplorer &&
+    (typeof (mobileExplorer as any).checkVisibility === "function"
+      ? (mobileExplorer as any).checkVisibility()
+      : window.getComputedStyle(mobileExplorer).display !== "none")
+  return Boolean(visible)
+}
+
+function enforceExplorerBreakpointState(explorer: HTMLElement) {
+  const isMobile = isMobileExplorerVisible(explorer)
+
+  if (!isMobile) {
+    // Always expanded on desktop
+    explorer.classList.remove("collapsed")
+    explorer.setAttribute("aria-expanded", "true")
+    document.documentElement.classList.remove("mobile-no-scroll")
+    return
+  }
+
+  // Mobile: keep html scroll lock in sync with explorer open/closed
+  const isCollapsed = explorer.classList.contains("collapsed")
+  if (isCollapsed) {
+    document.documentElement.classList.remove("mobile-no-scroll")
+  } else {
+    document.documentElement.classList.add("mobile-no-scroll")
+  }
+}
+
 function toggleExplorer(this: HTMLElement) {
   const nearestExplorer = this.closest(".explorer") as HTMLElement
   if (!nearestExplorer) return
@@ -273,30 +305,34 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
   const currentSlug = e.detail.url
   await setupExplorer(currentSlug)
 
-  // if mobile hamburger is visible, collapse by default
-  for (const explorer of document.getElementsByClassName("explorer")) {
-    const mobileExplorer = explorer.querySelector(".mobile-explorer")
-    if (!mobileExplorer) return
+  // Enforce breakpoint behavior:
+  // - Desktop: always expanded
+  // - Mobile: allow toggling, but keep scroll lock consistent
+  for (const explorerEl of document.getElementsByClassName("explorer")) {
+    const explorer = explorerEl as HTMLElement
 
-    if (mobileExplorer.checkVisibility()) {
+    // Only auto-collapse on mobile initial load if it is currently expanded.
+    // (If you want mobile to start expanded too, delete this block.)
+    if (isMobileExplorerVisible(explorer)) {
       explorer.classList.add("collapsed")
       explorer.setAttribute("aria-expanded", "false")
-
-      // Allow <html> to be scrollable when mobile explorer is collapsed
       document.documentElement.classList.remove("mobile-no-scroll")
     }
 
-    mobileExplorer.classList.remove("hide-until-loaded")
+    // Always force desktop open after the mobile auto-collapse logic
+    enforceExplorerBreakpointState(explorer)
+
+    const mobileBtn = explorer.querySelector(".mobile-explorer") as HTMLElement | null
+    mobileBtn?.classList.remove("hide-until-loaded")
   }
 })
 
 window.addEventListener("resize", function () {
-  // Desktop explorer opens by default, and it stays open when the window is resized
-  // to mobile screen size. Applies `no-scroll` to <html> in this edge case.
-  const explorer = document.querySelector(".explorer")
-  if (explorer && !explorer.classList.contains("collapsed")) {
-    document.documentElement.classList.add("mobile-no-scroll")
-    return
+  // Whenever we cross breakpoints, enforce:
+  // - Desktop: always expanded
+  // - Mobile: keep scroll lock consistent with open/closed
+  for (const explorerEl of document.getElementsByClassName("explorer")) {
+    enforceExplorerBreakpointState(explorerEl as HTMLElement)
   }
 })
 

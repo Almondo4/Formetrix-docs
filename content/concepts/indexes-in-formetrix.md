@@ -1,18 +1,32 @@
+---
+title: Indexes in Formetrix
+description: Understand how Formetrix uses composition metrics and interpretation indexes to turn raw measurements into meaningful, goal-aware insight.
+tags:
+  - indexes
+  - composition
+  - interpretation
+  - concepts
+  - faq
+publish: true
+date: 2026-01-20
+lastmod: 2026-01-21
+---
 
 Formetrix exposes two distinct kinds of indexes: **Composition Metrics** and **Interpretation Indexes**.
 They serve different purposes **by design** and are handled differently by the system.
 
-### **Composition vs Interpretation (Key Distinction)
+### **Composition vs Interpretation (Key Distinction)**
 
 >[!tip] At a Glance
 >
-| **Aspect**                  | **Composition Metrics**             | **Interpretation Indexes**                   |
-| --------------------------- | ----------------------------------- | -------------------------------------------- |
-| **Purpose**                 | Describe physical body components   | Contextualize, normalize, or compare         |
-| **What they represent**     | Fat, lean mass, muscle, water, bone | Size, proportion, symmetry, risk, efficiency |
-| **Primary role**            | Core body state                     | Meaning and interpretation                   |
-| **How values are obtained** | Input directly or estimated         | Automatically calculated                   
-|**Update behavior**|Updated per measurement session|Recomputed whenever inputs change|
+> | **Aspect**                  | **Composition Metrics**             | **Interpretation Indexes**                   |
+> | --------------------------- | ----------------------------------- | -------------------------------------------- |
+> | **Purpose**                 | Describe physical body components   | Contextualize, normalize, or compare         |
+> | **What they represent**     | Fat, lean mass, muscle, water, bone | Size, proportion, symmetry, risk, efficiency |
+> | **Primary role**            | Core body state                     | Meaning and interpretation                    |
+> | **How values are obtained** | Input directly or estimated         | Automatically calculated                      |
+> | **Update behavior**         | Updated per measurement session     | Recomputed whenever inputs change             |
+
 
 The distinction between the two is intentional:
 

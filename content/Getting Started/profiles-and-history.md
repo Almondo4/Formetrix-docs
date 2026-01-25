@@ -1,5 +1,17 @@
+---
+title: Profiles & History
+description: How Formetrix organizes your data, builds continuity, and turns long‑term measurements into meaningful trends.
+tags:
+  - guide
+  - profiles
+  - history
+  - data-continuity
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 
-Formetrix is built around the idea that **progress lives inside a profile**.
+Formetrix is built around **continuity**. Your measurements, trends, and visual documentation become more meaningful as they accumulate — and Profiles & History is where that long‑term picture lives.
 
 A profile represents a single body, context, and history. All measurements, estimates, visual documentation, and insights belong to a specific profile.
 
@@ -15,7 +27,7 @@ A profile is where Formetrix stores and evaluates:
     
 - Composition estimates and interpretation indexes
     
-- Visual documentation (Body Studio)
+- Visual documentation ([[content/Modules/📸  Body Studio/overview|Body Studio]])
     
 - Trends, summaries, and insights
     
@@ -107,12 +119,10 @@ The cumulative view helps you:
 
 > [!note]
 > The **Cumulative View** does not overwrite your history.
-> It is a reconstructed view designed for convenience and completeness.
+> It is a reconstructed view designed for convenience and completeness. Refer to [[cumulative-model|Cumulative Model]] for more details.
 
 ---
 ## **Creating a Profile**
-  
-A **profile** defines the context in which all measurements, trends, images, and interpretations exist.
   
 When creating a profile, you are asked to enter a set of profile details. Some fields are required, while others are optional.
 
@@ -144,5 +154,3 @@ This is intentional. Age & Gender are core dependencies for:
 Changing either after measurements exist would invalidate historical comparisons and derived insights. Locking this field ensures data consistency and interpretability over time.
 
 If tracking under a different context is needed, a **new profile** should be created.
-
----

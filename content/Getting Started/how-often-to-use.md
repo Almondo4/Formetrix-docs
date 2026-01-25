@@ -1,3 +1,14 @@
+---
+title: Your Measurement Schedule
+description: How often to measure, what matters most, and how Formetrix handles day‑to‑day variation.
+tags:
+  - guide
+  - measurement-frequency
+  - body-composition
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 
 Formetrix does not require you to measure everything every time.
   
@@ -73,40 +84,23 @@ This allows you to:
 - reduce unnecessary input effort
 
 >[!important]
-However, this should be used **intentionally**.<br/>
+>However, this should be used **intentionally**.<br/>
 > > If used without awareness, carried-forward values may give an illusion of continuity where no new data was added. This can reduce **interpretive precision** in the short term and, if prolonged, limit the reliability of the profile for interpretation.
 
----
-## **Important: Avoid Unintentional Gaps**
   
-For measurements that you track **frequently**, repeatedly leaving them empty can lead to:
-
-- sparse history for that metric
-    
-- reduced interpretability of short-term trends
-    
-- fewer usable data points for certain dependent indexes
-
-> [!Note]
-> This is **not a problem if intentional**.<br/>
->> It becomes a problem only when:
-> _A metric or index is meant to be tracked regularly, but is skipped inconsistently without context._
-
-  
-> [!Tip]
+> [!Tip] However,
 > If you are unsure, it is usually better to **carry forward** a stable value than to leave it empty repeatedly. Refer to [[cumulative-model]] for more details.
 
 ---
 ## **Using External Devices or Clinics**
 
-If you occasionally measure using an external device or clinical machine:
+If you occasionally use an external device or clinical machine:
 
-- you can import or manually enter those values
+- You can import or manually enter those readings
     
-- you can compare, early on, which Formetrix estimation methods and measurement points align most closely with your device readings
+- You can compare them with Formetrix’s estimation functions to see which ones align most closely with your reference device
     
-- based on that comparison, you can focus on inputs that maintain internal consistency with those readings
-  
+	- You can then prioritize those functions and build your measurement habit around the inputs that stay most consistent with that reference over time
 
 Accordingly, you may also choose to:
 
@@ -115,7 +109,7 @@ Accordingly, you may also choose to:
 - Distinguish these measurements using aliases or notes (e.g. “DEXA scan”, “Clinic visit”)
 
 >[!Note]
-Formetrix is capable of contextualizing imported values, distinguishing between **direct measurements** and **derived estimates** within the same timeline.
+>Formetrix is capable of contextualizing imported values, distinguishing between **direct measurements** and **derived estimates** within the same timeline.
 
 > [!danger]
 > Frequent switching between machines reduces comparability.
@@ -123,6 +117,7 @@ Formetrix is capable of contextualizing imported values, distinguishing between 
 
 ---
 ## **Example Scenarios**
+
 
 ### **Fat Loss (Conservative, Low Noise)**
 
@@ -133,6 +128,8 @@ Formetrix is capable of contextualizing imported values, distinguishing between 
 - Use cumulative view to maintain continuity
 
 This avoids chasing short-term fluctuations while still capturing real change.
+<br/>
+<br/>
 
 ### **Focused Adjustment (Short Phase)**
 
@@ -145,6 +142,8 @@ _(e.g. training block, dietary intervention, rehabilitation phase)_
 - No need to re-measure stable points
 
 This captures direction and response without unnecessary density.
+<br/>
+<br/>
 
 ### **External Scan / Clinic Visit**
 
@@ -162,11 +161,9 @@ This preserves continuity while benefiting from higher-resolution snapshots.
 
 - Daily full measurements
     
-- Measuring out of habit rather than purpose
-    
 - Leaving frequently tracked points empty unintentionally
     
-- Interpreting short-term fluctuations as real fat loss
+- Interpreting short-term fluctuations as real change
 
 ---
 

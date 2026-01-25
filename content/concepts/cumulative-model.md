@@ -1,3 +1,15 @@
+---
+title: Cumulative Model
+description: How Formetrix builds a continuous, up‑to‑date body model by carrying forward your most recent valid measurements.
+tags:
+  - guide
+  - concepts
+  - cumulative
+  - interpretation
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 
 The **cumulative model** is a way of viewing your profile that prioritizes **continuity and usability** over treating each measurement as an isolated event.
 
@@ -7,7 +19,8 @@ In real life, you rarely measure _everything_ at the same time — yet you still
 
 
  >[!important] TL;DR
->A cumulative view is **not “the last measurement”**.
+ >
+>A cumulative view is **not “the last measurement”**.<br/>
 >It is the **latest valid state per measurement point**.
 
 ---
@@ -45,11 +58,11 @@ The cumulative model was created to:
 ### **What it is**
 The cumulative model is a **composite view** built by:
 
-- ordering all measurements chronologically
+- Ordering all measurements chronologically
     
-- taking the **most recent valid value** for each measurement point
+- Taking the **most recent valid value** for each measurement point
     
-- assembling them into a single, complete body model
+- Assembling them into a single, complete body model
 
 No averaging. No prediction. No inference.
 
@@ -85,9 +98,9 @@ It simply **maps forward existing data**.
 
 Inside the **Body Composition module**, the cumulative model is available from:
 
-- the **Measurement Date Selector**
+- The [[Modules/📊 Body Composition/overview|Body Composition]] -> **Measurement Date Selector**
     
-- alongside individual measurement dates
+- Alongside individual measurement dates
   
 You can switch between:
 
@@ -102,19 +115,19 @@ The active view is always clearly labeled.
 
 When a value is not re-entered:
 
-- the last valid value is carried forward
+- The last valid value is carried forward
     
-- dependent indexes remain calculable
+- Dependent indexes remain calculable
     
-- interpretation remains continuous
+- Interpretation remains continuous
   
 When a value _is_ updated:
 
-- it replaces the previous value from that point onward
+- It replaces the previous value from that point onward
     
-- history remains intact
+- History remains intact
     
-- no retroactive changes occur
+- No retroactive changes occur
   
 This allows partial measurements **without breaking the model**.
 
@@ -125,41 +138,24 @@ This allows partial measurements **without breaking the model**.
   
 Use the cumulative model when:
 
-- performing **frequent, partial measurements**
+- Performing **frequent, partial measurements** ([[how-often-to-use#**Partial / Targeted Measurements**|Partial & Targeted Measurements]])
     
-- updating only what changed
+- Updating only what changed
     
-- reviewing current interpretation between full sessions
+- Reviewing current interpretation between full sessions
     
-- avoiding repetitive input
+- Avoiding repetitive input
     
-- maintaining continuity for AI interpretation and indexes
+- Maintaining continuity for AI interpretation and indexes
   
 
 Typical examples:
 
-- weekly weight + waist, monthly full measurement
+- Weekly weight + waist, monthly full measurement
     
-- short intervention phase with targeted checks
+- Short intervention phase with targeted checks
     
-- interim tracking between clinic or scan visits
-
----
-## **When to Avoid or Use With Caution**
-  
-The cumulative model should **not** be used as a substitute for real measurements.
-
-Avoid relying on it when:
-
-- reviewing historical accuracy
-    
-- comparing two specific dates
-    
-- leaving key measurements unchanged for long periods unintentionally
-    
-- assuming carried values reflect recent reality
-
-  
+- Interim tracking between clinic or scan visits
 
 > [!important]
 > >If overused without awareness, carried-forward values can create the **appearance of continuity without new information**.
@@ -182,4 +178,4 @@ Avoid relying on it when:
 > [!success] **Key takeaway**
 > The cumulative model is a **tool** to improve usability, not a **shortcut** for bad habits.
 
----
+

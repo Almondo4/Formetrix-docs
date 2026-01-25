@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 /* Minimal FAQ row (no box) */
 details.fmx-faq {
   margin: 0.9rem 0;

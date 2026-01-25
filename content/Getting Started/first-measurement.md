@@ -1,3 +1,14 @@
+---
+title: 🟢 Your First Measurement
+description: Learn how to take your first body measurement in Formetrix — the foundation for long-term tracking, insights, and composition analysis.
+tags:
+  - guide
+  - measurement
+  - body-composition
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 
 Your first measurement establishes the starting point of a profile’s timeline.
 
@@ -10,7 +21,7 @@ For guidance on taking measurements consistently and pragmatically, refer to [[m
 ## **Starting a New Measurement**
 
 
-From the Profile Home, expand the actions button and tap on the **Start New Measurement**.
+From the Profile Home -> [[Modules/📊 Body Composition/overview|Body Composition Module]], expand the actions button and tap on the **Start New Measurement**.
 
 This opens the **Measurement Setup dialog**, where you configure how this measurement session will behave.
 
@@ -21,7 +32,7 @@ This opens the **Measurement Setup dialog**, where you configure how this measur
   
 ### **Selecting Visible Measurement Points**
 
-Before starting, you can choose which set of measurement points  are visible for this session.
+Before starting, you can choose which set of [[anthropometrics|measurement points]]  are visible for this session.
 
 This selection controls **only the interface**:
 
@@ -31,9 +42,7 @@ This selection controls **only the interface**:
     
 - It can be changed later from **Settings → Pointer Presets**
 
-This allows you to focus only on the measurements you intend to update.
-
----
+This allows you to focus only on the measurements you intend to update. Refer to [[measurement-best-practices#How to Measure Effectively |this table]] for an easier setup.
 
 ### **Starting From Scratch or Carrying Over Values**
 
@@ -52,7 +61,7 @@ Carry-over sources include:
 
 - a previous measurement
     
-- the cumulative view
+- or the [[cumulative-model|cumulative view]]
 
 This makes it easy to update only what changed, without re-entering stable measurements.
 
@@ -62,20 +71,18 @@ This makes it easy to update only what changed, without re-entering stable measu
 
   
 
-Once the measurement session starts, Formetrix switches to **Input Mode**.
-
-  
+Once the measurement input session starts, Formetrix switches to **Input Mode**.
 
 ### **Measurement Points**
 
-- Tap any measurement pointer to activate it
+- Tap any measurement pointer to fill it
     
 - Enter the value directly in the corresponding input field
     
 - Each field has **realistic bounds and validation** to prevent accidental or invalid input
   
 
-A banner at the top of the screen always shows the **currently active measurement point**, helping you stay oriented during input.
+*The banner at the top of the screen  shows the **currently active measurement point**, helping you stay oriented during input.*
 
 ---
 
@@ -85,7 +92,7 @@ A banner at the top of the screen always shows the **currently active measuremen
 While entering values, Formetrix continuously evaluates your input.
 ### **Interpretation Indexes (Live)**  
 
-At the bottom of the screen, an expandable action button opens a **live preview** of interpretation indexes.
+At the bottom of the screen, an expandable action button opens a **live preview** of  [[indexes-in-formetrix#**Interpretation Indexes**|Interpretation Indexes]].
 
 - Values update in real time as you enter measurements
     
@@ -95,7 +102,7 @@ At the bottom of the screen, an expandable action button opens a **live preview*
 
 ### **Composition Estimates**
 
-Next to measurement fields, composition estimation functions are displayed.
+Click the **More Indexes** button (the calculator icon) during an input session to access all [[indexes-in-formetrix#**Composition Metrics|Composition Metrics]]. Each composition metric can be **manually entered**, **imported**, or **automatically estimated** using the **Magic Wand** button — hover over it to see more details about the estimation method.
 
 - Each estimation function shows whether its requirements are met
     
@@ -121,7 +128,7 @@ If there are composition metrics that could be calculated but were not yet appli
 
 - Automatically estimating available composition values
     
-    (using your configured estimation order from [[composition-metrics-auto-estimator]])
+    (using your configured estimation order from the [[composition-metrics-auto-estimator#**Composition Metrics Auto-Estimator**|Composition Metrics Auto Estimator]])
     
 - Continuing without estimating and saving only entered values  
 
@@ -163,7 +170,7 @@ Your first measurement now serves as the reference point for future comparisons 
 
 - You do **not** need to enter every measurement every time
     
-- Unchanged values can be carried forward via the cumulative view
+- Unchanged values can be carried forward via the cumulative view or a previous measurement
     
 - Accuracy comes from **consistency**, not completeness in a single session
     
@@ -180,6 +187,6 @@ After your first measurement, you can:
 
 - Review trends as they develop
     
-- Add visual records in Body Studio
+- Add visual records in [[content/Modules/📸  Body Studio/overview|Body Studio]]
     
 - Refine interpretation through additional measurements over time

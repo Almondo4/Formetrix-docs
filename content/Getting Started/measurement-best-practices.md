@@ -1,3 +1,14 @@
+---
+title: Measurement Best Practices
+description: Simple guidelines to help you take consistent, reliable measurements in Formetrix.
+tags:
+  - guide
+  - measurements
+  - best-practices
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 
 Measurements are not taken in a vacuum.
 
@@ -17,9 +28,9 @@ The goal is to measure under **similar conditions each time**.
 
 Try to:
 
-- measure around the same time of day
+- Measure around the same time of day
     
-- follow a repeatable routine (for example, after waking or before meals)
+- Follow a repeatable routine (for example, after waking or before meals)
 
 Small day-to-day variations are normal.
 
@@ -36,11 +47,11 @@ Others change more frequently (such as weight or waist).
 
 Formetrix’s **cumulative view** allows you to:
 
-- update only what has changed
+- Update only what has changed
     
-- keep stable values without re-entering them
+- Keep stable values without re-entering them
     
-- maintain a complete and coherent body model over time
+- Maintain a complete and coherent body model over time
 
 This reduces friction, speeds up input, and avoids unnecessary repetition.
 
@@ -49,11 +60,11 @@ This reduces friction, speeds up input, and avoids unnecessary repetition.
 
 For anthropometric measurements:
 
-- use the same measuring tape
+- Use the same measuring tape
     
-- apply similar tension each time
+- Apply similar tension each time
     
-- measure at the same anatomical landmarks
+- Measure at the same anatomical landmarks
    
 Minor technique differences are expected.
 
@@ -65,15 +76,15 @@ What matters most is repeating **your own method** in a similar way each time.
 
 Daily fluctuations can come from:
 
-- hydration
+- Hydration
     
-- food intake
+- Food intake
     
-- sleep
+- Sleep
     
-- stress
+- Stress
     
-- temperature
+- Temperature
 
 This is normal.
 
@@ -94,11 +105,11 @@ Images help you see _how_ it looks.
 
 When using Body Studio:
 
-- take photos under similar lighting
+- Take photos under similar lighting
     
-- use similar posture and framing
+- Use consistent posture and framing (use **Reference Measurement**)
     
-- avoid obsessing over small visual differences
+- Use auto‑adjustments to match the reference measurement, or manually adjust using the **Photo Kit** included in Body Studio
 
 Visual documentation adds context — not judgment.
 For details, see [[body-studio-module]].
@@ -240,4 +251,3 @@ Formetrix allows you to track measurements **independently of presets**, dependi
 > [!Important] You are in control
 > Formetrix adapts to **how you track**, not the other way around.
 
----

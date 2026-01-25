@@ -1,3 +1,16 @@
+---
+title: Composition Metrics — Auto Estimator
+description: How Formetrix automatically derives body composition metrics from your measurements using structured, context‑aware estimation methods.
+tags:
+  - guide
+  - automation
+  - concepts
+  - metrics
+  - estimators
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 # **Composition Metrics Auto-Estimator**
 
 The **Composition Metrics Auto-Estimator** is a helper system that applies eligible body-composition estimates automatically when a measurement is saved.
@@ -28,13 +41,17 @@ If a requirement is missing, the estimator skips that metric.
 ---
 ## **Why This Exists**
 
-Without automation, users often:
+As explained in [[what-is-formetrix#What Formetrix Does Differently |What Formetrix Does Differently]] ***Trends*** and ***Insights*** are at the core of Formetrix.
 
-- enter all required inputs
+![[assets/images/understand-your-data.jpg]]
+
+However without automation, users often:
+
+- Enter all required inputs
     
-- forget to apply an available estimate
+- Forget to apply an available estimate
     
-- save an incomplete measurement unintentionally
+- Save an incomplete measurement unintentionally
 
 The auto-estimator prevents this by acting as a **last-pass completeness layer**.
 
@@ -49,11 +66,11 @@ Formetrix uses a **priority order** to decide which method to apply when more th
 
 This order is:
 
-- **fully configurable**
+- **Fully Configurable**
     
-- **profile-specific**
+- **Profile-Specific**
     
-- **overridable at any time**
+- **Overridable At Any Time**
 
 You can review and change this order in **Settings → Measurements → Composition Estimation Order**.
 

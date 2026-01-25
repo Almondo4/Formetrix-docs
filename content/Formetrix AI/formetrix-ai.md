@@ -1,5 +1,16 @@
-
 ---
+title: Formetrix AI Overview
+description: An introduction to the design, capabilities, and privacy principles behind the Formetrix AI system.
+tags:
+  - guide
+  - interpretation
+  - ai
+  - privacy
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
+
 
 > [!warning] Availability Status
 > Formetrix AI is currently **under development**.
@@ -8,9 +19,6 @@
 This documentation exists to make the **design intent and boundaries clear early**, not to promise immediate availability.
 
 ---
-
-# **Formetrix AI — Local, Private, and Context-Aware Intelligence**
-
 ## **What Formetrix AI Is**
 
 Formetrix AI is not a single model, feature, or chatbot.
@@ -28,12 +36,14 @@ At its core, Formetrix AI combines:
 - controlled knowledge access (curated and personal)
 
 >[!Important]
-The goal is not to “talk back,” but to **reason within the Formetrix system**.
+>
+>The goal is not to “talk back,” but to **reason within the Formetrix system**.
   
 Formetrix AI is a **local-first intelligence layer** designed to help you interpret measurements, understand trends, and plan next steps — while keeping your data **private, controlled, and contextual**.
 
 >[!important]
-Rather than sending your health data to external services, Formetrix AI is built to work **where your data already lives**: on your device.
+>
+>Rather than sending your health data to external services, Formetrix AI is built to work **where your data already lives**: on your device.
 
 ---
 ## **Why Local AI Comes First**
@@ -163,4 +173,3 @@ Formetrix AI documentation will expand further, as Formetrix AI rolls out furthe
 
 The system will evolve — but the **principles outlined here will not**.
 
----

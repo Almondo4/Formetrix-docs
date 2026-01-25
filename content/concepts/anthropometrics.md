@@ -1,3 +1,14 @@
+---
+title: Anthropometrics
+description: The foundational body measurements used throughout Formetrix for composition, trends, and analysis.
+tags:
+  - guide
+  - concepts
+  - measurement
+publish: true
+created: 2026-01-20
+modified: 2026-01-25
+---
 
 **Anthropometrics** are direct measurements of the human body.
 
@@ -47,7 +58,7 @@ Meaning comes from **how measurements evolve together over time**.
 ---
 ## **Measurement Points in the Interface**
 
-Each anthropometric measurement is represented visually on the body model.
+Each anthropometric measurement is represented visually on the [[Modules/📊 Body Composition/overview#**Body Composition Module — Interface Overview**|body model]].
 ### **Ripple Indicators**
 
 - Show the **location** of a measurement point
@@ -176,4 +187,4 @@ You can enable, disable, or customize these groups at any time via **pointer pre
 ||Ankle Circumference|Joint size|Structural reference.|
 |**Skinfolds (SF)**|Chest, Triceps, Subscapular, Suprailiac, Abdominal, Thigh, Midaxillary, etc.|Subcutaneous fat thickness|**Advanced use only.** Improves body-fat accuracy **only if technique is consistent**. Poor technique reduces accuracy.|
 
----
+
