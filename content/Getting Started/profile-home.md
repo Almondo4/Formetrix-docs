@@ -21,19 +21,19 @@ Selecting a module from the dropdown loads the corresponding workspace while kee
 
 Each profile provides access to a set of Formetrix modules. All modules share the same profile context and history.
 
-- [[Modules/📊 Body Composition/overview|Body Composition]]
+- [[content/Modules/Body Composition/overview|Body Composition]]
     
     Core measurement and analysis module for anthropometrics, composition metrics, interpretation indexes, and longitudinal trends.
     
-- [[Modules/📸  Body Studio/overview|Body Studio]]
+- [[content/Modules/Body Studio/overview|Body Studio]]
     
     Visual progress tracking through standardized body images, aligned over time to provide visual context alongside measurements.
     
-- [[Modules/🏋️ Workout & Performance/overview|Workouts & Performance]]
+- [[content/Modules/Workout & Performance/overview|Workouts & Performance]]
     
     Tracks training-related progress and performance signals over time, allowing physical changes to be interpreted alongside activity patterns.
     
-- [[Modules/🍽️ Nutrition/overview|Nutrition]]
+- [[content/Modules/Nutrition/overview|Nutrition]]
 	Personalized calorie targets, adaptive meal plans, food-quality guidance, and AI‑assisted nutrition support. 
 	
 - [[formetrix-ai|Formetrix AI]]

@@ -58,7 +58,7 @@ Meaning comes from **how measurements evolve together over time**.
 ---
 ## **Measurement Points in the Interface**
 
-Each anthropometric measurement is represented visually on the [[Modules/📊 Body Composition/overview#**Body Composition Module — Interface Overview**|body model]].
+Each anthropometric measurement is represented visually on the [[content/Modules/Body Composition/overview#**Body Composition Module — Interface Overview**|body model]].
 ### **Ripple Indicators**
 
 - Show the **location** of a measurement point

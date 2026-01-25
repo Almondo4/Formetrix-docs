@@ -27,7 +27,7 @@ A profile is where Formetrix stores and evaluates:
     
 - Composition estimates and interpretation indexes
     
-- Visual documentation ([[content/Modules/📸  Body Studio/overview|Body Studio]])
+- Visual documentation ([[content/Modules/Body Studio/overview|Body Studio]])
     
 - Trends, summaries, and insights
     

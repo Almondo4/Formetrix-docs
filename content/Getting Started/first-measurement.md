@@ -21,7 +21,7 @@ For guidance on taking measurements consistently and pragmatically, refer to [[m
 ## **Starting a New Measurement**
 
 
-From the Profile Home -> [[Modules/📊 Body Composition/overview|Body Composition Module]], expand the actions button and tap on the **Start New Measurement**.
+From the Profile Home -> [[content/Modules/Body Composition/overview|Body Composition Module]], expand the actions button and tap on the **Start New Measurement**.
 
 This opens the **Measurement Setup dialog**, where you configure how this measurement session will behave.
 
@@ -187,6 +187,6 @@ After your first measurement, you can:
 
 - Review trends as they develop
     
-- Add visual records in [[content/Modules/📸  Body Studio/overview|Body Studio]]
+- Add visual records in [[content/Modules/Body Studio/overview|Body Studio]]
     
 - Refine interpretation through additional measurements over time

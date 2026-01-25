@@ -98,7 +98,7 @@ It simply **maps forward existing data**.
 
 Inside the **Body Composition module**, the cumulative model is available from:
 
-- The [[Modules/📊 Body Composition/overview|Body Composition]] -> **Measurement Date Selector**
+- The [[content/Modules/Body Composition/overview|Body Composition]] -> **Measurement Date Selector**
     
 - Alongside individual measurement dates
   
