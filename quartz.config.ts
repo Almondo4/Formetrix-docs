@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "https://docs.formetrix.fit",
+    baseUrl: "almondo4.github.io/Formetrix-docs/",
     ignorePatterns: ["private", "templates", ".obsidian"], //"assets"
     defaultDateType: "modified",
     theme: {
