@@ -47,7 +47,7 @@ To better understand how measurements, estimates, and trends are used:
 
 Formetrix is organized into modules, each focused on a specific aspect of body analysis and progress tracking.
 
-- 🧩 [[Modules/index|Modules overview]]
+- 🧩 [[Modules/index|Modules Overview]]
 
 Additional modules are introduced incrementally as they become available.
 

@@ -273,6 +273,12 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .explorer-content[aria-expanded="true"] {
+      padding-top: 7rem;
+    }
+  }
 }
 
 .mobile-no-scroll {

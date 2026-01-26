@@ -13,7 +13,7 @@ const script = `
 
     const theme =
       localStorage.getItem("quartz-theme") ||
-      document.documentElement.getAttribute("data-theme") ||
+      document.documentElement.getAttribute("saved-theme") ||
       "light";
 
     const lightSrc = "/static/title-icon-light.png";
@@ -29,7 +29,7 @@ const script = `
   document.addEventListener("themechange", () => apply());
 
   // Quartz client-side navigation
-  document.addEventListener("navchange", () => apply());
+  document.addEventListener("nav", () => apply());
 })();
 `
 
@@ -84,7 +84,7 @@ PageTitle.css = `
   background: radial-gradient(
     circle,
     rgba(247, 119, 7, 0.8) 0%,
-    rgba(255, 198, 149, 0.40) 35%,
+    rgba(255, 198, 149, 0.40) 40%,
     rgba(255, 255, 255, 0) 60%
   );
   filter: blur(14px);
@@ -93,7 +93,7 @@ PageTitle.css = `
 }
 
 /* Dark mode halo */
-html[data-theme="dark"] .icon::before {
+html[saved-theme="dark"] .icon::before {
   background: radial-gradient(
     circle,
     rgba(255, 198, 149, 0.85) 0%,
@@ -104,8 +104,8 @@ html[data-theme="dark"] .icon::before {
 }
 
 @keyframes halo-breathe {
-  0%, 100% { transform: scale(.96); opacity: .75; }
-  50%      { transform: scale(1.02); opacity: .95; }
+  0%, 100% { transform: scale(.76); opacity: .75; }
+  50%      { transform: scale(0.86); opacity: .95; }
 }
 
 .icon img {
@@ -117,8 +117,18 @@ html[data-theme="dark"] .icon::before {
 /* Smaller logo on phones / narrow screens */
 @media (max-width: 600px) {
   .icon img {
-    width: 86px;
-    height: 86px;
+    width: 76px;
+    height: 76px;
+  }
+  
+  /* Smaller halo on mobile */
+  .icon::before {
+    inset: -12px;
+    filter: blur(8px);
+  }
+  
+  html[saved-theme="dark"] .icon::before {
+    filter: blur(6px);
   }
 }
 `

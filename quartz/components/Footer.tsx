@@ -14,7 +14,7 @@ export default ((opts?: Options) => {
       <footer class={displayClass ?? ""}>
         <div class="footer-content">
           <div style="display: flex; align-items: center; justify-content: center; gap: 2rem;">
-            <img src="https://formetrix.fit/assets/aev-gem.gif" alt="AEV Labs Logo" width="44" height="74" />
+            <img class="footer-logo" src="https://formetrix.fit/assets/aev-gem.gif" alt="AEV Labs Logo" width="44" height="74" />
             <div>
               <p>
           <strong>Formetrix™</strong> is a product of <strong>AEV Labs</strong>.
@@ -71,8 +71,18 @@ export default ((opts?: Options) => {
     }
 
     .footer-links-group a:hover {
-      color: var(--secondary); /* Accent color on hover */
+      color: var(--secondary);
       text-decoration: underline; 
+    }
+
+    /* Make white lines charcoal on light theme */
+    html[saved-theme="light"] .footer-logo {
+      filter: invert(1) grayscale(1) brightness(0.55) contrast(0.5);
+    }
+
+    /* No filter on dark theme (default) */
+    html[saved-theme="dark"] .footer-logo {
+      filter: none;
     }
   `
   return Footer
