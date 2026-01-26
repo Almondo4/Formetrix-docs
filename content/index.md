@@ -61,7 +61,7 @@ Additional modules are introduced incrementally as they become available.
 
 Some sections outline capabilities that are introduced gradually. Availability may vary by platform and release.
 
-For release-specific information, see "[[guides/release-status|Release status & availability]]".
+For release-specific information, see "[[content/Road Map/release-status|Road Map]]".
 
 ---
 ## **Who is Formetrix  for**

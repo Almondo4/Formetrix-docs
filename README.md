@@ -89,23 +89,32 @@ Key settings include:
 
 ---
 
-## 🌍 Deployment (GitHub Pages)
+## 🌍 Deployment (Cloudflare Pages)
 
-This repository includes a GitHub Actions workflow that:
+The documentation site is deployed using **Cloudflare Pages**, which automatically builds and publishes the site whenever you sync changes to this repository.
 
-1. Builds the Quartz site
-2. Publishes the output to the `gh-pages` branch
-3. Serves it via GitHub Pages
+### 🔄 How deployment works
 
-To trigger deployment, simply push to `main`:
+1. Cloudflare pulls the latest commit from your GitHub repo
+    
+2. It runs the Quartz build command
+    
+3. The generated static site (`/public`) is deployed globally
+    
+4. Your custom domain (e.g., `docs.formetrix.fit`) updates instantly
+    
 
-```bash
-git add .
-git commit -m "Update docs"
-git push
+### 🚀 Deploying updates
+
+Simply commit and push your changes:
+
+bash
+
+```
+npx quartz sync --no-pull
 ```
 
-GitHub Pages will update automatically.
+Cloudflare Pages will detect the update, rebuild the site, and deploy it automatically—no manual steps, no branch switching, no pulling required.
 
 
 ---

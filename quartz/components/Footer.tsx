@@ -34,7 +34,7 @@ export default ((opts?: Options) => {
               formetrix.fit
             </a>
             <a href="mailto:support@formetrix.fit">
-              support@formetrix.fit
+              Contact Support
             </a>
           </div>
         </div>
