@@ -21,10 +21,10 @@ const defaultOptions: SocialImageOptions = {
   excludeRoot: false,
 }
 
-/**
- * Generates social image (OG/twitter standard) and saves it as `.webp` inside the public folder
- * @param opts options for generating image
- */
+// =============================================================================
+// VERSION 1: DYNAMIC OG IMAGE GENERATION (COMMENTED OUT)
+// =============================================================================
+/*
 async function generateSocialImage(
   { cfg, description, fonts, title, fileData }: ImageOptions,
   userOpts: SocialImageOptions,
@@ -99,6 +99,14 @@ async function processOgImage(
     ext: ".webp",
   })
 }
+*/
+
+// =============================================================================
+// VERSION 2: STATIC OG IMAGE (ACTIVE)
+// =============================================================================
+// Place your static OG image at: /Users/dulcedeleche/Workshop/Formetrix-docs/quartz/static/assets/og-image.png
+// Or customize the path below
+const STATIC_OG_IMAGE_PATH = "og-image.png"
 
 export const CustomOgImagesEmitterName = "CustomOgImages"
 export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = (userOpts) => {
@@ -110,6 +118,11 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       return []
     },
     async *emit(ctx, content, _resources) {
+      // V2: No dynamic generation, just skip
+      return
+      
+      // V1: UNCOMMENT BELOW TO RESTORE DYNAMIC GENERATION
+      /*
       const cfg = ctx.cfg.configuration
       const headerFont = cfg.theme.typography.header
       const bodyFont = cfg.theme.typography.body
@@ -119,14 +132,19 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
         if (vfile.data.frontmatter?.socialImage !== undefined) continue
         yield processOgImage(ctx, vfile.data, fonts, fullOptions)
       }
+      */
     },
     async *partialEmit(ctx, _content, _resources, changeEvents) {
+      // V2: No dynamic generation, just skip
+      return
+      
+      // V1: UNCOMMENT BELOW TO RESTORE DYNAMIC GENERATION
+      /*
       const cfg = ctx.cfg.configuration
       const headerFont = cfg.theme.typography.header
       const bodyFont = cfg.theme.typography.body
       const fonts = await getSatoriFonts(headerFont, bodyFont)
 
-      // find all slugs that changed or were added
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         if (changeEvent.file.data.frontmatter?.socialImage !== undefined) continue
@@ -134,6 +152,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
           yield processOgImage(ctx, changeEvent.file.data, fonts, fullOptions)
         }
       }
+      */
     },
     externalResources: (ctx) => {
       if (!ctx.cfg.configuration.baseUrl) {
@@ -144,6 +163,30 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
       return {
         additionalHead: [
           (pageData) => {
+            // V2: Use static image
+            let userDefinedOgImagePath = pageData.frontmatter?.socialImage
+
+            if (userDefinedOgImagePath) {
+              userDefinedOgImagePath = isAbsoluteURL(userDefinedOgImagePath)
+                ? userDefinedOgImagePath
+                : `https://${baseUrl}/static/${userDefinedOgImagePath}`
+            }
+
+            const staticOgImagePath = `https://${baseUrl}/static/${STATIC_OG_IMAGE_PATH}`
+            const ogImagePath = userDefinedOgImagePath ?? staticOgImagePath
+            const ogImageMimeType = `image/${getFileExtension(ogImagePath) ?? "png"}`
+            
+            return (
+              <>
+                <meta property="og:image" content={ogImagePath} />
+                <meta property="og:image:url" content={ogImagePath} />
+                <meta name="twitter:image" content={ogImagePath} />
+                <meta property="og:image:type" content={ogImageMimeType} />
+              </>
+            )
+            
+            // V1: UNCOMMENT BELOW TO RESTORE DYNAMIC GENERATION
+            /*
             const isRealFile = pageData.filePath !== undefined
             let userDefinedOgImagePath = pageData.frontmatter?.socialImage
 
@@ -174,6 +217,7 @@ export const CustomOgImages: QuartzEmitterPlugin<Partial<SocialImageOptions>> = 
                 <meta property="og:image:type" content={ogImageMimeType} />
               </>
             )
+            */
           },
         ],
       }
